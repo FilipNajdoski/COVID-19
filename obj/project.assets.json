@@ -8591,25 +8591,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\filip\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\FilipIT\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\filip\\Desktop\\COV19\\Cov19.csproj",
+      "projectUniqueName": "C:\\Users\\FilipIT\\Documents\\GitHub\\COVID-19\\Cov19.csproj",
       "projectName": "Cov19",
-      "projectPath": "C:\\Users\\filip\\Desktop\\COV19\\Cov19.csproj",
-      "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\filip\\Desktop\\COV19\\obj\\",
+      "projectPath": "C:\\Users\\FilipIT\\Documents\\GitHub\\COVID-19\\Cov19.csproj",
+      "packagesPath": "C:\\Users\\FilipIT\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\FilipIT\\Documents\\GitHub\\COVID-19\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\filip\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\FilipIT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -8675,7 +8670,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
