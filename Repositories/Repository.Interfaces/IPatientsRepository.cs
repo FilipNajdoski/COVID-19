@@ -21,5 +21,7 @@ namespace Cov19.Repositories.Repository.Interfaces
         void AgeCalc(Patients patients, DateTime dateOfBirth);
 
         void BolniotOzdraveniotIMrtviot(Patients patients, bool infected, bool recovered, bool dead);
+
+        void Bolesnik(Patients patients, DateTime dateOfInfection, DateTime dateOfRecoveryDeath);
     }
 }
