@@ -1,0 +1,5 @@
+﻿@model DateTime
+@if (Model != null && Model != DateTime.MinValue)
+{
+    @string.Format("{0:dd-MMMM-yyyy}", Model)
+}

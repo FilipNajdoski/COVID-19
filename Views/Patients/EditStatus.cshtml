@@ -1,0 +1,70 @@
+﻿@model Cov19.Data.Entities.Patients
+@{
+    ViewData["Title"] = "EditStatus";
+}
+
+<h1>Edit</h1>
+
+<div class="container">
+    <h3>Edit patient status</h3>
+    <hr />
+    <div class="wrapper">
+        <div class="row">
+            <div class="col12">
+                <form asp-action="EditStatus">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="form-group">
+                        <input type="hidden" asp-for="NameAndSurname" />
+                    </div>
+
+                    <div class="form-group">
+                        <input type="checkbox" class="checkica" asp-for="Recovered"> Recovered <br />
+                        <input type="checkbox" class="checkica" asp-for="Dead"> Dead <br />
+
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="DateOfRecoveryDeath" class="control-lable"></label>
+                        <input asp-for="DateOfRecoveryDeath" class="form-control" placeholder="Enter date of infection" />
+                        <span asp-validation-for="DateOfRecoveryDeath" class="text-danger"></span>
+                    </div>
+
+                    <div>
+                        <input type="hidden" asp-for="NameAndSurname" />
+                        <input type="hidden" asp-for="UniqueIdNumber" />
+                        <input type="hidden" asp-for="IdNumber" />
+                        <input type="hidden" asp-for="Adress" />
+                        <input type="hidden" asp-for="City" />
+                        <input type="hidden" asp-for="DateOfBirth" />
+                        <input type="hidden" asp-for="Age" />
+                        <input type="hidden" asp-for="Gender" />
+                        <input type="hidden" asp-for="Country" />
+                        <input type="hidden" asp-for="Infected" />
+                        <input type="hidden" asp-for="DateOfInfection" />
+                        <input type="hidden" asp-for="CauseOfInfection" />
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="EditStatus" class="btn btn-block btn-primary" />
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <Script>
+
+        $('input[type="checkbox"]').on('change', function() {
+        $('input[class="' + this.className + '"]').not(this).prop('checked', false);
+        });
+
+    </Script>
+}

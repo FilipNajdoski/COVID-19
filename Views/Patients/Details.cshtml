@@ -1,0 +1,57 @@
+﻿@model Cov19.Data.Entities.Patients
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Pacient</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-6">
+            @Html.DisplayFor(model => model.DateOfBirth)
+        </dt>
+        <dd class="col-6">
+            @Html.DisplayFor(model => model.DateOfBirth)
+        </dd>
+        <dd class="col-6">
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+        <dt class="col-6">
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+        <dd class="col-6">
+            @Html.DisplayFor(model => model.City)
+        </dd>
+        <dt class="col-6">
+            @Html.DisplayNameFor(model => model.Country)
+        </dt>
+        <dd class="col-6">
+            @Html.DisplayFor(model => model.Infected)
+        </dd>
+        <dt class="col-6">
+            @Html.DisplayNameFor(model => model.DateOfInfection)
+        </dt>
+        <dd class="col-6">
+            @Html.DisplayFor(model => model.CauseOfInfection)
+        </dd>
+        <dt class="col-6">
+            @Html.DisplayNameFor(model => model.Recovered)
+        </dt>
+        <dd class="col-6">
+            @Html.DisplayFor(model => model.DateOfRecoveryDeath)
+        </dd>
+        <dt class="col-6">
+            @Html.DisplayNameFor(model => model.Dead)
+        </dt>
+        <dd class="col-6">
+            @Html.DisplayFor(model => model.DateOfRecoveryDeath)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="EditBasicInfo" asp-route-id="@Model.Id">Edit</a>
+    <a asp-action="EditStatus" asp-route-id="@Model.Id">Edit</a>
+    <a asp-action="Index">Back to List</a>
+</div>
