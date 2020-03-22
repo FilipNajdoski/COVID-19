@@ -89,6 +89,9 @@ namespace Cov19.Repositories
             }
         }
 
+        void Bolesnik(Patients patients, DateTime dateOfInfection, DateTime dateOfRecoveryDeath)
+        { }
+
         public IEnumerable<Patients> GetAllPatients()
         {
             var result = _context.Patients.AsEnumerable();
